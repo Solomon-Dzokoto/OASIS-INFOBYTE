@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Web App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 fire text-center">ToDo Web App</h1>
+        <div class="row">
+            <form class="col-lg-5  form p-4">
+                <input 
+                type="text"
+                id="title"
+                class="form-control"
+                placeholder="Title"
+                required
+                >
+                <textarea
+                 class="form-control mt-2"
+                 placeholder="Description"
+                  id="desc" cols="39" 
+                  rows="13"></textarea>
+                  <button id="btn" class="btn bg-success text-white mt-3 w-100" type="submit">Add</button>
+              </form>
+              <ul class="display col-lg-5">
+                <div class="top text-white p-4 d-flex justify-content-between">
+                    <small>Title</small>
+                    <small>Description</small>
+                    <small>Delete</small>
+                </div>
+              </ul>
+        </div>
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
