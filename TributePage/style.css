@@ -1,5 +1,6 @@
 body {  
     margin: 0;  
+    padding: 0;
     font-family: Arial, sans-serif;  
     color: white;  
     background-color: black;  
@@ -11,7 +12,7 @@ body {
 }  
 
 .header h1 {  
-    font-size: 48px;  
+    font-size: clamp(1.5rem,4vw,3rem);  
     margin: auto;  
     padding-bottom: 1rem;
     border-bottom: .2rem solid ;
@@ -32,9 +33,9 @@ body {
 
 .quote {
     display: grid;
-    font-size: 30px;  
-    margin: 20px 0;  
+    font-size:clamp(1rem,3vw,2rem);  
     grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
     small{
         place-content: center;
     }
@@ -42,7 +43,7 @@ body {
 
 .biography {  
     margin: 0 auto;  
-    font-size: 18px;  
+    font-size: clamp(.8rem,2vw,1.1rem);  
 }  
 .images{
     display: grid;
@@ -63,4 +64,13 @@ footer {
     text-align: center;
     margin-top: 50px;  
     font-size: 14px;  
+}
+
+@media only screen and (max-width:800px){
+ .quote{
+    grid-template-columns: 1fr;
+    small{
+        place-content: start;
+    }
+ }
 }
